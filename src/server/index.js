@@ -77,7 +77,7 @@ app.delete("/api/todos/:id", async (req, res) => {
 });
 
 // Server configuration
-const PORT = 5002;
+const PORT = process.env.PORT || 5002;
 
 async function startServer() {
   try {
